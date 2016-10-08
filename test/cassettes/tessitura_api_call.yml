@@ -1,0 +1,224 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://testapp.tessituranetworkramp.com/LiveAPI/Tessitura.asmx/GetPerformanceDetail?iModeOfSale=10&iPerf_no=1230
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Mon, 01 Feb 2016 11:58:04 GMT
+      Content-Length:
+      - '2766'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<DataSet xmlns=\"http://tessiturasoftware.com/\">\r\n
+        \ <xs:schema id=\"GetPerformanceDetailResult\" xmlns=\"\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"
+        xmlns:msdata=\"urn:schemas-microsoft-com:xml-msdata\">\r\n    <xs:element
+        name=\"GetPerformanceDetailResult\" msdata:IsDataSet=\"true\" msdata:UseCurrentLocale=\"true\">\r\n
+        \     <xs:complexType>\r\n        <xs:choice minOccurs=\"0\" maxOccurs=\"unbounded\">\r\n
+        \         <xs:element name=\"Performance\">\r\n            <xs:complexType>\r\n
+        \             <xs:sequence>\r\n                <xs:element name=\"inv_no\"
+        type=\"xs:int\" minOccurs=\"0\" />\r\n                <xs:element name=\"description\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"type\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"text1\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"text2\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"text3\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"text4\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"perf_dt\"
+        type=\"xs:dateTime\" minOccurs=\"0\" />\r\n                <xs:element name=\"composerfn\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"composermn\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"composerln\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"facility_desc\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"on_sale_ind\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"performance_type\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"perf_type_id\"
+        type=\"xs:short\" minOccurs=\"0\" />\r\n                <xs:element name=\"seat_ind\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"print_ind\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"zmap_no\"
+        type=\"xs:int\" minOccurs=\"0\" />\r\n                <xs:element name=\"facility_no\"
+        type=\"xs:int\" minOccurs=\"0\" />\r\n                <xs:element name=\"prod_season_no\"
+        type=\"xs:int\" minOccurs=\"0\" />\r\n                <xs:element name=\"season_no\"
+        type=\"xs:short\" minOccurs=\"0\" />\r\n                <xs:element name=\"season_desc\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"start_dt\"
+        type=\"xs:dateTime\" minOccurs=\"0\" />\r\n                <xs:element name=\"end_dt\"
+        type=\"xs:dateTime\" minOccurs=\"0\" />\r\n                <xs:element name=\"perf_status\"
+        type=\"xs:short\" minOccurs=\"0\" />\r\n                <xs:element name=\"perf_status_desc\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"time_slot\"
+        type=\"xs:short\" minOccurs=\"0\" />\r\n                <xs:element name=\"time_slot_desc\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"ga_ind\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n              </xs:sequence>\r\n
+        \           </xs:complexType>\r\n          </xs:element>\r\n          <xs:element
+        name=\"Price\">\r\n            <xs:complexType>\r\n              <xs:sequence>\r\n
+        \               <xs:element name=\"perf_no\" type=\"xs:int\" minOccurs=\"0\"
+        />\r\n                <xs:element name=\"pkg_no\" type=\"xs:int\" minOccurs=\"0\"
+        />\r\n                <xs:element name=\"zone_no\" type=\"xs:int\" minOccurs=\"0\"
+        />\r\n                <xs:element name=\"price_type\" type=\"xs:int\" minOccurs=\"0\"
+        />\r\n                <xs:element name=\"price\" type=\"xs:decimal\" minOccurs=\"0\"
+        />\r\n                <xs:element name=\"base_price\" type=\"xs:decimal\"
+        minOccurs=\"0\" />\r\n                <xs:element name=\"description\" type=\"xs:string\"
+        minOccurs=\"0\" />\r\n                <xs:element name=\"available\" type=\"xs:string\"
+        minOccurs=\"0\" />\r\n                <xs:element name=\"avail_count\" type=\"xs:int\"
+        minOccurs=\"0\" />\r\n                <xs:element name=\"zone_group\" type=\"xs:int\"
+        minOccurs=\"0\" />\r\n                <xs:element name=\"zone_group_desc\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n              </xs:sequence>\r\n
+        \           </xs:complexType>\r\n          </xs:element>\r\n          <xs:element
+        name=\"Credit\">\r\n            <xs:complexType>\r\n              <xs:sequence>\r\n
+        \               <xs:element name=\"credit_type\" type=\"xs:string\" minOccurs=\"0\"
+        />\r\n                <xs:element name=\"role_no\" type=\"xs:int\" minOccurs=\"0\"
+        />\r\n                <xs:element name=\"role_desc\" type=\"xs:string\" minOccurs=\"0\"
+        />\r\n                <xs:element name=\"full_name\" type=\"xs:string\" minOccurs=\"0\"
+        />\r\n                <xs:element name=\"artist_no\" type=\"xs:int\" minOccurs=\"0\"
+        />\r\n                <xs:element name=\"rank\" type=\"xs:int\" minOccurs=\"0\"
+        />\r\n              </xs:sequence>\r\n            </xs:complexType>\r\n          </xs:element>\r\n
+        \         <xs:element name=\"PriceType\">\r\n            <xs:complexType>\r\n
+        \             <xs:sequence>\r\n                <xs:element name=\"price_type\"
+        type=\"xs:int\" minOccurs=\"0\" />\r\n                <xs:element name=\"description\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"short_desc\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"category\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"def_price_type\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"promo\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"promo_rank\"
+        type=\"xs:int\" minOccurs=\"0\" />\r\n                <xs:element name=\"promo_max\"
+        type=\"xs:int\" minOccurs=\"0\" />\r\n                <xs:element name=\"promo_text\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"promo_override_default\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n              </xs:sequence>\r\n
+        \           </xs:complexType>\r\n          </xs:element>\r\n          <xs:element
+        name=\"AllPrice\">\r\n            <xs:complexType>\r\n              <xs:sequence>\r\n
+        \               <xs:element name=\"zone_no\" type=\"xs:int\" minOccurs=\"0\"
+        />\r\n                <xs:element name=\"price_type\" type=\"xs:int\" minOccurs=\"0\"
+        />\r\n                <xs:element name=\"price\" type=\"xs:decimal\" minOccurs=\"0\"
+        />\r\n                <xs:element name=\"base_price\" type=\"xs:decimal\"
+        minOccurs=\"0\" />\r\n                <xs:element name=\"description\" type=\"xs:string\"
+        minOccurs=\"0\" />\r\n                <xs:element name=\"available\" type=\"xs:string\"
+        minOccurs=\"0\" />\r\n                <xs:element name=\"avail_count\" type=\"xs:int\"
+        minOccurs=\"0\" />\r\n                <xs:element name=\"def_price_type\"
+        type=\"xs:int\" minOccurs=\"0\" />\r\n                <xs:element name=\"price_type_desc\"
+        type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element name=\"rank\"
+        type=\"xs:int\" minOccurs=\"0\" />\r\n              </xs:sequence>\r\n            </xs:complexType>\r\n
+        \         </xs:element>\r\n          <xs:element name=\"WebContent\">\r\n
+        \           <xs:complexType>\r\n              <xs:sequence>\r\n                <xs:element
+        name=\"orig_inv_no\" type=\"xs:int\" minOccurs=\"0\" />\r\n                <xs:element
+        name=\"inv_no\" type=\"xs:int\" minOccurs=\"0\" />\r\n                <xs:element
+        name=\"inv_type\" type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element
+        name=\"content_type\" type=\"xs:int\" minOccurs=\"0\" />\r\n                <xs:element
+        name=\"content_type_desc\" type=\"xs:string\" minOccurs=\"0\" />\r\n                <xs:element
+        name=\"content_value\" type=\"xs:string\" minOccurs=\"0\" />\r\n              </xs:sequence>\r\n
+        \           </xs:complexType>\r\n          </xs:element>\r\n        </xs:choice>\r\n
+        \     </xs:complexType>\r\n    </xs:element>\r\n  </xs:schema>\r\n  <diffgr:diffgram
+        xmlns:msdata=\"urn:schemas-microsoft-com:xml-msdata\" xmlns:diffgr=\"urn:schemas-microsoft-com:xml-diffgram-v1\">\r\n
+        \   <GetPerformanceDetailResult xmlns=\"\">\r\n      <Performance diffgr:id=\"Performance1\"
+        msdata:rowOrder=\"0\">\r\n        <inv_no>1230</inv_no>\r\n        <description>Ingri
+        Fiksdal</description>\r\n        <type>R</type>\r\n        <perf_dt>2016-02-07T15:00:00-06:00</perf_dt>\r\n
+        \       <composerln xml:space=\"preserve\"> </composerln>\r\n        <facility_desc>Theater</facility_desc>\r\n        <on_sale_ind>Y</on_sale_ind>\r\n
+        \       <performance_type>P: Dance</performance_type>\r\n        <perf_type_id>4</perf_type_id>\r\n
+        \       <seat_ind>Y</seat_ind>\r\n        <print_ind>Y</print_ind>\r\n        <zmap_no>13</zmap_no>\r\n
+        \       <facility_no>12</facility_no>\r\n        <prod_season_no>1224</prod_season_no>\r\n
+        \       <season_no>13</season_no>\r\n        <season_desc>Performance
+        Season</season_desc>\r\n        <start_dt>2015-06-24T10:00:00-05:00</start_dt>\r\n
+        \       <end_dt>2016-02-07T14:00:00-06:00</end_dt>\r\n        <perf_status>1</perf_status>\r\n
+        \       <perf_status_desc>On Sale</perf_status_desc>\r\n        <time_slot>2</time_slot>\r\n
+        \       <time_slot_desc>Matinee</time_slot_desc>\r\n        <ga_ind>Y</ga_ind>\r\n
+        \     </Performance>\r\n      <Price diffgr:id=\"Price1\" msdata:rowOrder=\"0\">\r\n
+        \       <perf_no>1230</perf_no>\r\n        <pkg_no>0</pkg_no>\r\n        <zone_no>33</zone_no>\r\n
+        \       <price_type>44</price_type>\r\n        <price>30.0000</price>\r\n
+        \       <base_price>30.0000</base_price>\r\n        <description>Standard</description>\r\n
+        \       <available>Y</available>\r\n        <avail_count>26</avail_count>\r\n
+        \       <zone_group>-1</zone_group>\r\n        <zone_group_desc>(none)</zone_group_desc>\r\n
+        \     </Price>\r\n      <PriceType diffgr:id=\"PriceType1\" msdata:rowOrder=\"0\">\r\n
+        \       <price_type>44</price_type>\r\n        <description>Perf Full Price
+        Web</description>\r\n        <short_desc>FPWEB</short_desc>\r\n        <category>Standard</category>\r\n
+        \       <def_price_type>Y</def_price_type>\r\n        <promo>Y</promo>\r\n
+        \       <promo_rank>3</promo_rank>\r\n        <promo_max>9</promo_max>\r\n
+        \       <promo_override_default>N</promo_override_default>\r\n      </PriceType>\r\n
+        \     <PriceType diffgr:id=\"PriceType2\" msdata:rowOrder=\"1\">\r\n        <price_type>48</price_type>\r\n
+        \       <description>Perf Performance Package Web</description>\r\n        <short_desc>PPWEB</short_desc>\r\n
+        \       <category>Subscription</category>\r\n        <def_price_type>N</def_price_type>\r\n
+        \       <promo>Y</promo>\r\n        <promo_rank>2</promo_rank>\r\n        <promo_max>9</promo_max>\r\n
+        \       <promo_override_default>N</promo_override_default>\r\n      </PriceType>\r\n
+        \     <PriceType diffgr:id=\"PriceType3\" msdata:rowOrder=\"2\">\r\n        <price_type>46</price_type>\r\n
+        \       <description>Perf Student Discount Web</description>\r\n        <short_desc>StuWeb</short_desc>\r\n
+        \       <category>Standard</category>\r\n        <def_price_type>N</def_price_type>\r\n
+        \       <promo>Y</promo>\r\n        <promo_rank>1</promo_rank>\r\n        <promo_max>2</promo_max>\r\n
+        \       <promo_override_default>N</promo_override_default>\r\n      </PriceType>\r\n
+        \     <AllPrice diffgr:id=\"AllPrice1\" msdata:rowOrder=\"0\">\r\n        <zone_no>33</zone_no>\r\n
+        \       <price_type>44</price_type>\r\n        <price>30.0000</price>\r\n
+        \       <base_price>30.0000</base_price>\r\n        <description>Standard</description>\r\n
+        \       <available>Y</available>\r\n        <avail_count>26</avail_count>\r\n
+        \       <def_price_type>44</def_price_type>\r\n        <price_type_desc>Perf
+        Full Price Web</price_type_desc>\r\n        <rank>1</rank>\r\n      </AllPrice>\r\n
+        \     <AllPrice diffgr:id=\"AllPrice2\" msdata:rowOrder=\"1\">\r\n        <zone_no>31</zone_no>\r\n
+        \       <price_type>46</price_type>\r\n        <price>10.0000</price>\r\n
+        \       <base_price>30.0000</base_price>\r\n        <description>Student</description>\r\n
+        \       <available>Y</available>\r\n        <avail_count>6</avail_count>\r\n
+        \       <def_price_type>44</def_price_type>\r\n        <price_type_desc>Perf
+        Student Discount Web</price_type_desc>\r\n        <rank>2</rank>\r\n      </AllPrice>\r\n
+        \     <AllPrice diffgr:id=\"AllPrice3\" msdata:rowOrder=\"2\">\r\n        <zone_no>33</zone_no>\r\n
+        \       <price_type>48</price_type>\r\n        <price>24.0000</price>\r\n
+        \       <base_price>30.0000</base_price>\r\n        <description>Standard</description>\r\n
+        \       <available>Y</available>\r\n        <avail_count>26</avail_count>\r\n
+        \       <def_price_type>44</def_price_type>\r\n        <price_type_desc>Perf
+        Performance Package Web</price_type_desc>\r\n        <rank>1</rank>\r\n      </AllPrice>\r\n
+        \     <WebContent diffgr:id=\"WebContent1\" msdata:rowOrder=\"0\">\r\n        <orig_inv_no>1230</orig_inv_no>\r\n
+        \       <inv_no>1224</inv_no>\r\n        <inv_type>S</inv_type>\r\n        <content_type>13</content_type>\r\n
+        \       <content_type_desc>TN_Express_Cal_Img</content_type_desc>\r\n        <content_value>http://pngimg.com/upload/duck_PNG5011.png</content_value>\r\n
+        \     </WebContent>\r\n      <WebContent diffgr:id=\"WebContent2\" msdata:rowOrder=\"1\">\r\n
+        \       <orig_inv_no>1230</orig_inv_no>\r\n        <inv_no>1224</inv_no>\r\n
+        \       <inv_type>S</inv_type>\r\n        <content_type>14</content_type>\r\n
+        \       <content_type_desc>TN_Express_Prod_Img</content_type_desc>\r\n        <content_value>http://pngimg.com/upload/duck_PNG5011.png</content_value>\r\n
+        \     </WebContent>\r\n      <WebContent diffgr:id=\"WebContent3\" msdata:rowOrder=\"2\">\r\n
+        \       <orig_inv_no>1230</orig_inv_no>\r\n        <inv_no>1224</inv_no>\r\n
+        \       <inv_type>S</inv_type>\r\n        <content_type>15</content_type>\r\n
+        \       <content_type_desc>TN_Express_Prod_Short_Desc</content_type_desc>\r\n
+        \       <content_value>This performance is general admission.\r\n&lt;br&gt;&lt;br&gt;\r\n\r\n&lt;a
+        href=\"http://pngimg.com \"
+        class=\"learn-more\" target=\"_blank\"&gt;Learn more&lt;br&gt;&lt;/a&gt;</content_value>\r\n
+        \     </WebContent>\r\n      <WebContent diffgr:id=\"WebContent4\" msdata:rowOrder=\"3\">\r\n
+        \       <orig_inv_no>1230</orig_inv_no>\r\n        <inv_no>1224</inv_no>\r\n
+        \       <inv_type>S</inv_type>\r\n        <content_type>16</content_type>\r\n
+        \       <content_type_desc>TN_Express_Prod_Synopsis</content_type_desc>\r\n
+        \       <content_value>This performance is general admission.\r\n&lt;br&gt;&lt;br&gt;\r\n\r\n&lt;a
+        href=\"http://pngimg.com \"
+        class=\"learn-more\" target=\"_blank\"&gt;Learn more&lt;br&gt;&lt;/a&gt;</content_value>\r\n
+        \     </WebContent>\r\n      <WebContent diffgr:id=\"WebContent5\" msdata:rowOrder=\"4\">\r\n
+        \       <orig_inv_no>1230</orig_inv_no>\r\n        <inv_no>1224</inv_no>\r\n
+        \       <inv_type>S</inv_type>\r\n        <content_type>23</content_type>\r\n
+        \       <content_type_desc>TN_Express_ProdSeas_Text</content_type_desc>\r\n
+        \       <content_value>This performance is general admission.\r\n&lt;br&gt;&lt;br&gt;\r\n\r\n&lt;a
+        href=\"http://pngimg.com \"
+        class=\"learn-more\" target=\"_blank\"&gt;Learn more&lt;br&gt;&lt;/a&gt;</content_value>\r\n
+        \     </WebContent>\r\n      <WebContent diffgr:id=\"WebContent6\" msdata:rowOrder=\"5\">\r\n
+        \       <orig_inv_no>1230</orig_inv_no>\r\n        <inv_no>10</inv_no>\r\n
+        \       <inv_type>T</inv_type>\r\n        <content_type>21</content_type>\r\n
+        \       <content_type_desc>TN_Express_Purchase_Instr</content_type_desc>\r\n
+        \       <content_value>&lt;div class=\"bg_white\"&gt;&lt;b&gt;Members: Not
+        seeing your member discount price?&lt;/b&gt; Please remember to &lt;a href=\"https://example.com/account/login.aspx\"&gt;login&lt;/a&gt;
+        first.&lt;/div&gt;</content_value>\r\n      </WebContent>\r\n    </GetPerformanceDetailResult>\r\n
+        \ </diffgr:diffgram>\r\n</DataSet>"
+    http_version:
+  recorded_at: Mon, 01 Feb 2016 11:58:03 GMT
+recorded_with: VCR 3.0.1
