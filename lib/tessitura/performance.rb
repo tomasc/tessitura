@@ -30,8 +30,6 @@ module Tessitura
     attr_accessor_of_type :type
     attr_accessor_of_type :zmap_no, type: Integer
 
-    alias dtend end_dt
-    alias dtstart start_dt
     alias facility_description facility_desc
     alias facility_number facility_no
     alias production_season_number prod_season_no
@@ -52,11 +50,11 @@ module Tessitura
     end
 
     def all_prices
-      doc.xpath('//AllPrice').map { |xml| AllPrice.new(xml) }
+      doc.xpath('//AllPrice').map { |xml| AllPrice.new(xml.to_xml) }
     end
 
     def price_types
-      doc.xpath('//PriceType').map { |xml| PriceType.new(xml) }
+      doc.xpath('//PriceType').map { |xml| PriceType.new(xml.to_xml) }
     end
   end
 end
